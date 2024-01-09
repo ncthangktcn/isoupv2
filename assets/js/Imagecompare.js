@@ -66,19 +66,19 @@ jQuery(document).ready(function($){
                 minLeft = containerOffset + 10,
                 maxLeft = containerOffset + containerWidth - dragWidth - 10;
             
-            dragElement.parents().on("mousemove vmousemove", function(e) {
+            dragElement.parents().on("mousemove vmousemove touchmove", function(e) {
                 if( !dragging) {
                     dragging =  true;
                     ( !window.requestAnimationFrame )
                         ? setTimeout(function(){animateDraggedHandle(e, xPosition, dragWidth, minLeft, maxLeft, containerOffset, containerWidth, resizeElement, labelContainer, labelResizeElement);}, 100)
                         : requestAnimationFrame(function(){animateDraggedHandle(e, xPosition, dragWidth, minLeft, maxLeft, containerOffset, containerWidth, resizeElement, labelContainer, labelResizeElement);});
                 }
-            }).on("mouseup vmouseup", function(e){
+            }).on("mouseup vmouseup touchmove", function(e){
                 dragElement.removeClass('draggable');
                 resizeElement.removeClass('resizable');
             });
             e.preventDefault();
-        }).on("mouseup vmouseup", function(e) {
+        }).on("mouseup vmouseup touchmove", function(e) {
             dragElement.removeClass('draggable');
             resizeElement.removeClass('resizable');
         });
@@ -95,7 +95,7 @@ jQuery(document).ready(function($){
 
         var widthValue = (leftValue + dragWidth/2 - containerOffset)*100/containerWidth+'%';
         
-        $('.draggable').css('left', widthValue).on("mouseup vmouseup", function() {
+        $('.draggable').css('left', widthValue).on("mouseup vmouseup touchmove", function() {
             $(this).removeClass('draggable');
             resizeElement.removeClass('resizable');
         });

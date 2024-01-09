@@ -41,7 +41,7 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- Compare slicer  -->
-	<link rel="stylesheet" href="assets/css/imagecompare.css"> 
+	<link rel="stylesheet" href="assets/css/image-compare-viewer.min.css"> 
 	<!--Icon-->
 	<link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
 	
@@ -86,59 +86,79 @@
 				<p><p>#</p></p>
 
 				<div class="row">
-					<div class="col-md-12" style="margin-top: 1%;">
-						<figure class="cd-image-container">
-							<img src="images/DTE/Before/1.jpg" alt="Original Image">
-							<span class="cd-image-label" data-type="original">Original</span>
-					
-							<div class="cd-resize-img"> <!-- the resizable image on top -->
-								<img src="images/DTE/After/1.jpg" alt="Modified Image">
-								<span class="cd-image-label" data-type="modified">Modified</span>
+					<div class="col-md-12" style="margin-top: 1%; overflow:visible;">						
+						<div class="image-comparison-slider">
+						  <img src="images/DTE/Before/1.jpg" alt="before">
+						  <div class="img-wrapper">
+							<img src="images/DTE/After/1.jpg" alt="after">
+						  </div>
+						  <span class="label label-before">Before</span>
+						  <span class="label label-after">After</span>
+						  <div class="handle">
+							<div class="handle-line"></div>
+							<div class="handle-circle">
+							  <i class="ti-angle-left"></i>
+							  <i class="ti-angle-right"></i>
 							</div>
-					
-							<span class="cd-handle"></span>
-						  </figure>
-					</div>
+							<div class="handle-line"></div>
+						  </div>
+						</div>
+					  </div>
 
-					<div class="col-md-12" style="margin-top: 1%;">
-						<figure class="cd-image-container">
-							<img src="images/DTE/Before/2.JPG" alt="Original Image">
-							<span class="cd-image-label" data-type="original">Original</span>
-					
-							<div class="cd-resize-img"> <!-- the resizable image on top -->
-								<img src="images/DTE/After/2.JPG" alt="Modified Image">
-								<span class="cd-image-label" data-type="modified">Modified</span>
+					  <div class="col-md-12" style="margin-top: 1%; overflow:visible;">						
+						<div class="image-comparison-slider">
+						  <img src="images/DTE/Before/2.jpg" alt="before">
+						  <div class="img-wrapper">
+							<img src="images/DTE/After/2.jpg" alt="after">
+						  </div>
+						  <span class="label label-before">Before</span>
+						  <span class="label label-after">After</span>
+						  <div class="handle">
+							<div class="handle-line"></div>
+							<div class="handle-circle">
+							  <i class="ti-angle-left"></i>
+							  <i class="ti-angle-right"></i>
 							</div>
-					
-							<span class="cd-handle"></span>
-						  </figure>
-					</div>
-					<div class="col-md-12" style="margin-top: 1%;">
-						<figure class="cd-image-container">
-							<img src="images/DTE/Before/3.JPG" alt="Original Image">
-							<span class="cd-image-label" data-type="original">Original</span>
-					
-							<div class="cd-resize-img"> <!-- the resizable image on top -->
-								<img src="images/DTE/After/3.JPG" alt="Modified Image">
-								<span class="cd-image-label" data-type="modified">Modified</span>
+							<div class="handle-line"></div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-md-12" style="margin-top: 1%; overflow:visible;">						
+						<div class="image-comparison-slider">
+						  <img src="images/DTE/Before/3.jpg" alt="before">
+						  <div class="img-wrapper">
+							<img src="images/DTE/After/3.jpg" alt="after">
+						  </div>
+						  <span class="label label-before">Before</span>
+						  <span class="label label-after">After</span>
+						  <div class="handle">
+							<div class="handle-line"></div>
+							<div class="handle-circle">
+							  <i class="ti-angle-left"></i>
+							  <i class="ti-angle-right"></i>
 							</div>
-					
-							<span class="cd-handle"></span>
-						  </figure>
-					</div>
-					<div class="col-md-12" style="margin-top: 1%;">
-						<figure class="cd-image-container">
-							<img src="images/DTE/Before/4.JPG" alt="Original Image">
-							<span class="cd-image-label" data-type="original">Original</span>
-					
-							<div class="cd-resize-img"> <!-- the resizable image on top -->
-								<img src="images/DTE/After/4.JPG" alt="Modified Image">
-								<span class="cd-image-label" data-type="modified">Modified</span>
+							<div class="handle-line"></div>
+						  </div>
+						</div>
+					  </div>
+					<<div class="col-md-12" style="margin-top: 1%; overflow:visible;">						
+						<div class="image-comparison-slider">
+						  <img src="images/DTE/Before/4.jpg" alt="before">
+						  <div class="img-wrapper">
+							<img src="images/DTE/After/4.jpg" alt="after">
+						  </div>
+						  <span class="label label-before">Before</span>
+						  <span class="label label-after">After</span>
+						  <div class="handle">
+							<div class="handle-line"></div>
+							<div class="handle-circle">
+							  <i class="ti-angle-left"></i>
+							  <i class="ti-angle-right"></i>
 							</div>
-					
-							<span class="cd-handle"></span>
-						  </figure>
-					</div>
+							<div class="handle-line"></div>
+						  </div>
+						</div>
+					  </div>
 					
 					<div class="col-md-12" style="margin-top: 1%;">
 					<p class="text-center"><a href="index.html#portfolio" class="btn btn-primary btn-outline">More Photos</a></p>
@@ -170,7 +190,8 @@
 		
 	<script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
-    <script src="assets/js/Imagecompare.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js'></script>
+    <script src="assets/js/image-compare-viewer.min.js"></script>
 	
 	
 	<!-- MAIN JS -->

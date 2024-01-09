@@ -142,7 +142,7 @@ Main components
   margin-top: -22px;
   border-radius: 50%;
   background: #df4236 url("./cd-arrows.svg") no-repeat center center;
-  cursor: move;  
+  cursor:grab;  
   opacity: 0;
   -webkit-transform: translate3d(0, 0, 0) scale(0);
   -moz-transform: translate3d(0, 0, 0) scale(0);
